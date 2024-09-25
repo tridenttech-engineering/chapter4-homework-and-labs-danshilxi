@@ -1,11 +1,23 @@
-// Introductory11.cpp - displays ending balance
-// Created/revised by <your name> on <current date>
+//Lab4-2.cpp - displays a salesperson's commission
+//Created/revised by <your name> on <current date>
 
 #include <iostream>
 using namespace std;
 
-int main() {
-  
+int main() 
+{ 
+  //declare named constant and variables
+  const double COMM_RATE = 0.1;
+  double sales = 12.1;
+  double commission = 0.0;
+
+  //enter input item
+  cout << "Sales amount: " ;
+  cin >> sales;
+
+  //calculate  and display the commission
+  commission = sales * COMM_RATE;
+  cout << "Commission: $" << commission << endl;
 
   return 0;
-} // end of main function
+} //end of main function
