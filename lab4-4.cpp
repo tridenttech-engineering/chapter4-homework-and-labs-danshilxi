@@ -18,7 +18,7 @@ int main()
   cin >> radius;
 
   //calculate and display the volume
-  volume = 3.14 * radius * radius * height;
+  volume = PI * radius * radius * height;
   cout << "Volume: " << volume << endl;
 
   return 0;
