@@ -6,18 +6,27 @@ using namespace std;
 
 int main() 
 { 
-  //declare named constant and variables
-  const double COMM_RATE = 0.1;
-  double sales = 12.1;
-  double commission = 0.0;
+  //declare named  variables
+  double begBalance = 0.0;
+  double totDep = 0.0;
+  double totWith = 0.0;
+  double endBalance = 0.0;
 
   //enter input item
-  cout << "Sales amount: " ;
-  cin >> sales;
+  cout << "Beginning balance: " ;
+  cin >> begBalance;
 
-  //calculate  and display the commission
-  commission = sales * COMM_RATE;
-  cout << "Commission: $" << commission << endl;
+  cout << "Total deposits: " ;
+  cin >> totDep;
+
+  cout << "Total withdrawals: " ;
+  cin >> totWith;
+
+  //calculate  and display the end balance
+  endBalance = begBalance + totDep - totWith;
+  
+  
+  cout << "End Balance: $" << endBalance << endl;
 
   return 0;
 } //end of main function
