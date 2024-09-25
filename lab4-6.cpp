@@ -7,8 +7,8 @@ using namespace std;
 int main()
 {
 	//declare variables
-	int base = 11;
-	int height = 13;
+	double base = 11;
+	double height = 13;
 	double area = 0.0;
 
 	//calculate and display area
